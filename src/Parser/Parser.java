@@ -2,13 +2,17 @@ package Parser;
 
 public class Parser {
 
-    String path;
+    File file;
 
 
-    public Parser(String path){
+    public Parser(File file){
 
-        this.path = path;
+        this.file = file;
+    }
 
+    public void start() {
+
+        // Save txt files
     }
     
     // Construct the message
@@ -24,6 +28,7 @@ public class Parser {
     // Get reactions reactions from deleted messages and check if one of the important guys is in it
 
 
-
-
+    public File getFile() {
+        return file;
+    }
 }
