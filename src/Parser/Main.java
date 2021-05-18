@@ -1,8 +1,9 @@
-package Output;
+package Parser;
 
 import Parser.*;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Main {
 
@@ -10,6 +11,7 @@ public class Main {
 
 //        String path = "src/Input/test_text.txt";
         String path = "src/Input/02_general.txt";
+        String out_path = "src/Output/02_general_output.txt";
         ArrayList<String> blackListName = new ArrayList<>();
 
         blackListName.add("Thomas Flood");
@@ -34,29 +36,22 @@ public class Main {
         blackListUsername.add("edoneill1");
         blackListUsername.add("masterharkin");
 
-        ArrayList<File> files = new ArrayList<>();
-
-//        files.add(new File(, blackListUsername, blackListName));
-//        files.add(new File(, blackListUsername, blackListName));
-//        files.add(new File(, blackListUsername, blackListName));
-//        files.add(new File(, blackListUsername, blackListName));
-//        files.add(new File(, blackListUsername, blackListName));
-
-        Parser parser = new Parser(new File(path, blackListUsername, blackListName));
+        ArrayList<File> file = new ArrayList<>();
+        file.add(new File(path, blackListUsername, blackListName));
+        Parser parser = new Parser(file, out_path);
         parser.start();
 
-//        String line = "[2018-02-22 18:01:51] <tomflood737> Brendan - you can edit messages here. @aaronschapira one advantage you'll like over WhatsApp ";
+//        String[] dir_names = new String[]{"Andrew_Crowe", "Brendan_Jacobs", "Channels", "Edward_O'Neill", "Fergus_Cassidy", "Glen_Healy", "John_Murray", "Robby_Garland", "Seamus_Bugler", "Stephen_Harkin", "Thomas_Flood"};
 //
-//        String[] temp = line.split(" ");
-//
-//        ArrayList<String> tokens = new ArrayList<>();
-//
-//        tokens.addAll(Arrays.asList(temp));
-//
-//        System.out.println(parser.getUsername(line));
-//
-//        parser.checkMessage(tokens);
-//
-//        System.out.println("tokens = " + tokens);
+//        for (String name : dir_names) {
+//            java.io.File path_dir = new java.io.File("src/Input/" + name);
+//            java.io.File[] files_dir = path_dir.listFiles();
+//            ArrayList<File> files = new ArrayList<>();
+//            for (int i = 0; i < Objects.requireNonNull(files_dir).length; i++) {
+//                files.add(new File(files_dir[i].getPath(), blackListUsername, blackListName));
+//            }
+//            Parser parser = new Parser(files, "src/Output/" + name);
+//            parser.start();
+//        }
     }
 }
