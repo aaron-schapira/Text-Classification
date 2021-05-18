@@ -8,8 +8,8 @@ public class Main {
 
     public static void main(String[]args) {
 
-        String path = "/Users/clemdetry/Documents/Documents – Clem's MacBook Pro/Ryanair/src/Input/test_text.txt";
-//        String path = "/Users/clemdetry/Documents/Documents – Clem's MacBook Pro/Ryanair/src/Input/02_general.txt";
+//        String path = "src/Input/test_text.txt";
+        String path = "src/Input/02_general.txt";
         ArrayList<String> blackListName = new ArrayList<>();
 
         blackListName.add("Thomas Flood");

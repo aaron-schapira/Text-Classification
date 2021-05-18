@@ -88,7 +88,8 @@ public class Parser {
                 }
                 line = br.readLine();
             }
-            java.io.File file = new java.io.File("src/Output/test_output.txt");
+//            java.io.File file = new java.io.File("src/Output/test_output.txt");
+            java.io.File file = new java.io.File("src/Output/02_general.txt");
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
                 writer.write(processText.toString());
             }
