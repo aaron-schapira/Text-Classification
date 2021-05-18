@@ -9,6 +9,7 @@ public class Main {
     public static void main(String[]args) {
 
         String path = "/Users/clemdetry/Documents/Documents – Clem's MacBook Pro/Ryanair/src/Input/test_text.txt";
+//        String path = "/Users/clemdetry/Documents/Documents – Clem's MacBook Pro/Ryanair/src/Input/02_general.txt";
         ArrayList<String> blackListName = new ArrayList<>();
 
         blackListName.add("Thomas Flood");
@@ -23,12 +24,12 @@ public class Main {
 
         ArrayList<String> blackListUsername = new ArrayList<>();
 
-        blackListUsername.add("Tomflood737");
-        blackListUsername.add("Andy.airamerica");
+        blackListUsername.add("tomflood737");
+        blackListUsername.add("andy.airamerica");
         blackListUsername.add("healyglen");
         blackListUsername.add("brendanjacobs");
         blackListUsername.add("j_johnmurray737");
-        blackListUsername.add("Fergus.cassidy");
+        blackListUsername.add("fergus.cassidy");
         blackListUsername.add("seamusbugler");
         blackListUsername.add("edoneill1");
         blackListUsername.add("masterharkin");

@@ -18,11 +18,21 @@ public class Parser {
         try {
             int i = 0;
             boolean isBlackListed = false;
+            boolean isTimer = false;
+            try(FileWriter fw = new FileWriter(file, true);
+                BufferedWriter bw = new BufferedWriter(fw);
+                PrintWriter out = new PrintWriter(bw)) {
+                out.println("[20");
+            }
+            catch (IOException e) {
+                e.printStackTrace();
+            }
             FileReader fileReader = new FileReader(file);
             BufferedReader br = new BufferedReader(fileReader);
             String line = br.readLine();
             StringBuilder processText = new StringBuilder();
             ArrayList<String> message = new ArrayList<>();
+            String[] savedDate = null;
             while (line != null) {
                 if (line.length() > 1) {
                     String[] temp = line.split(" ");
@@ -31,12 +41,25 @@ public class Parser {
                         processText.append("\n");
                     }
                     if (i > 0 && line.charAt(0) == '-' && line.charAt(1) == '-' && line.charAt(2) == '-' && line.charAt(3) == '-') {
-                        processText.append("\n");
-                        processText.append(String.join(" ", temp));
-                        processText.append("\n");
+                        isTimer = true;
+                        savedDate = temp;
                     }
                     else {
-                        if (i > 0 || line.charAt(0) == '-' && line.charAt(1) == '-' && line.charAt(2) == '-' && line.charAt(3) == '-') {
+                        if (line.charAt(0) == '[' && line.charAt(1) == '2' && line.charAt(2) == '0') {
+                            processText.append(String.join(" ", message));
+                            if (isTimer) {
+                                processText.append("\n");
+                                processText.append("\n");
+                                processText.append(String.join(" ", savedDate));
+                                processText.append("\n");
+                                isTimer = false;
+                            }
+                            i++;
+                            message = new ArrayList<>();
+                            isBlackListed = file.getBlackListUsername().contains(getUsername(line));
+                        }
+                        if ((i > 1 || line.charAt(0) == '-' && line.charAt(1) == '-' && line.charAt(2) == '-' && line.charAt(3) == '-')
+                        && temp.length > 1) {
                             if (file.getBlackListUsername().contains(getUsername(line)) || isBlackListed) {
                                 message.add("\n");
                                 if (temp[0].length() > 1 && temp[0].charAt(1) == ':' && temp[0].charAt(temp[0].length() - 1) == ':') {
@@ -44,32 +67,31 @@ public class Parser {
                                 }
                                 // CHECK TEMP HERE
                                 message.addAll(Arrays.asList(temp));
-                                isBlackListed = true;
-                            } else {
+                            }
+                            else {
                                 message.add("\n");
                                 if (temp[0].length() > 1 && temp[0].charAt(1) == ':' && temp[0].charAt(temp[0].length() - 1) == ':') {
                                     message.add("THIS_IS_A_REACTION");
                                     // CHECK TEMP HERE
                                     message.addAll(Arrays.asList(temp));
-                                } else {
-                                    message.add("LINE CENSURED");
                                 }
-                                isBlackListed = false;
+                                else {
+                                    message.add("LINE CENSORED");
+                                }
                             }
-                        }
-                        if (line.charAt(0) == '[' && line.charAt(1) == '2' && line.charAt(2) == '0') {
-                            processText.append(String.join(" ", message));
-                            processText.append("\n");
-                            i++;
-                            message = new ArrayList<>();
-                            isBlackListed = false;
                         }
                     }
                 }
                 line = br.readLine();
             }
-            PrintWriter out = new PrintWriter("src/Output/test_output.txt");
-            out.println(processText);
+//            PrintWriter out = new PrintWriter("src/Output/test_output.txt");
+//            PrintWriter out = new PrintWriter("src/Output/02_general_output.txt");
+//            System.out.println(processText);
+//            out.println(processText);
+            java.io.File file = new java.io.File("src/Output/test_output.txt");
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
+                writer.write(processText.toString());
+            }
         }
         catch(FileNotFoundException e) {
             System.out.println("Could not find, open or use chosen file.");
