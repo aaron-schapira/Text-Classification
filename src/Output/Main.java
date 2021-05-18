@@ -34,6 +34,14 @@ public class Main {
         blackListUsername.add("edoneill1");
         blackListUsername.add("masterharkin");
 
+        ArrayList<File> files = new ArrayList<>();
+
+//        files.add(new File(, blackListUsername, blackListName));
+//        files.add(new File(, blackListUsername, blackListName));
+//        files.add(new File(, blackListUsername, blackListName));
+//        files.add(new File(, blackListUsername, blackListName));
+//        files.add(new File(, blackListUsername, blackListName));
+
         Parser parser = new Parser(new File(path, blackListUsername, blackListName));
         parser.start();
 
