@@ -168,18 +168,25 @@ public class Parser {
             // Check the emoji and the person that reacted, We start 2 index after the token to get the first name
             for (int i = 2; i < tokens.length; i++) {
                 // Check if the person that reacted is in the blacklist
-                if(file.getBlackListUsername().contains(tokens[i])) {
-                    counter++;
+                if (tokens[i].charAt(tokens[i].length()-1) == ',') {
+                    if (file.getBlackListUsername().contains(sliceRange(tokens[i], 0, tokens[i].length() - 1))) {
+                        counter++;
+                    } else {
+                        copy.set(copy.indexOf(tokens[i]), "CENSORED NAME,");
+                    }
                 }
                 else {
-                    copy.set(copy.indexOf(tokens[i]), "CENSORED NAME,");
+                    if (file.getBlackListUsername().contains(tokens[i])) {
+                        counter++;
+                    } else {
+                        copy.set(copy.indexOf(tokens[i]), "CENSORED NAME,");
+                    }
                 }
             }
 
             if(counter == 0) {
                 out.add("REACTION");
                 out.add("CENSORED");
-
                 return out.toArray(new String[0]);
             }
             else {
@@ -197,6 +204,18 @@ public class Parser {
             temp[i] = arr[i-1];
         }
         return temp;
+    }
+
+    public String sliceRange(String s, int startIndex, int endIndex) {
+
+        if (startIndex < 0) {
+            startIndex = s.length() + startIndex;
+        }
+        if (endIndex < 0) {
+            endIndex = s.length() + endIndex;
+        }
+
+        return s.substring(startIndex, endIndex);
     }
 
     public File getFile() {
