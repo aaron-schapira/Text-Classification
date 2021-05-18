@@ -1,34 +1,19 @@
-
- LINE CENSURED 
- LINE CENSURED 
- LINE CENSURED 
- LINE CENSURED 
- LINE CENSURED 
- LINE CENSURED 
- LINE CENSURED 
- LINE CENSURED 
- LINE CENSURED 
- LINE CENSURED
-
- LINE CENSURED 
- LINE CENSURED
+Channel Name: #02_general
+Channel ID: C92CU7G76
+Created: 2018-02-01 17:48:01 by rpa
+Type: Channel
+Renamed: #04_general to #02_general on 2020-04-03 16:22:43
+Renamed: #04-general to #04_general on 2018-02-04 13:31:04
+Renamed: #general to #04-general on 2018-02-04 12:20:54
+Topic: "Company-wide announcements and work-based matters", set on 2018-02-01 17:48:01 by rpa
+Purpose: "This channel is for general workspace-wide communication. All members are in this channel.", set on 2018-02-04 16:37:18 by rpa
+#################################################################
+Messages:
+---- 2018-02-07 ----
 
  LINE CENSURED
 
- LINE CENSURED
-
- LINE CENSURED 
- LINE CENSURED
-
- LINE CENSURED
-
- LINE CENSURED 
- LINE CENSURED
-
- LINE CENSURED
-
- LINE CENSURED 
- LINE CENSURED
+---- 2018-02-08 ----
 
  LINE CENSURED
 
@@ -36,37 +21,19 @@
 
  LINE CENSURED
 
- LINE CENSURED
+---- 2018-02-09 ----
 
  LINE CENSURED
 
  LINE CENSURED
 
- LINE CENSURED 
- LINE CENSURED
-
- LINE CENSURED
-
- LINE CENSURED 
- LINE CENSURED
-
- LINE CENSURED 
- LINE CENSURED
-
- LINE CENSURED
-
- LINE CENSURED 
- LINE CENSURED 
- THIS_IS_A_REACTION 	:+1: squaadgras
+---- 2018-02-11 ----
 
  LINE CENSURED
 
  LINE CENSURED
 
- LINE CENSURED
-
- LINE CENSURED 
- THIS_IS_A_REACTION 	:+1: rpa
+---- 2018-02-15 ----
 
  LINE CENSURED
 
@@ -76,10 +43,54 @@
 
  LINE CENSURED
 
- LINE CENSURED 
- THIS_IS_A_REACTION 	:blush: rpa
+ LINE CENSURED
+
+ LINE CENSURED
+
+ LINE CENSURED
+
+---- 2018-02-16 ----
+
+ LINE CENSURED
+
+ LINE CENSURED
+
+---- 2018-02-17 ----
+
+ LINE CENSURED
+
+---- 2018-02-18 ----
+
+ LINE CENSURED
+
+ LINE CENSURED
 
  LINE CENSURED 
+ THIS_IS_A_REACTION 	:+1: squaadgras 
+ LINE CENSURED
+
+ LINE CENSURED
+
+ LINE CENSURED
+
+ LINE CENSURED
+
+ THIS_IS_A_REACTION 	:+1: rpa 
+ LINE CENSURED
+
+ LINE CENSURED
+
+ LINE CENSURED
+
+ LINE CENSURED
+
+ LINE CENSURED
+
+ THIS_IS_A_REACTION 	:blush: rpa 
+ LINE CENSURED
+
+---- 2018-02-19 ----
+
  LINE CENSURED 
  LINE CENSURED 
  LINE CENSURED
@@ -91,37 +102,32 @@
  LINE CENSURED 
  LINE CENSURED 
  LINE CENSURED 
- THIS_IS_A_REACTION 	:+1: pcerutti
-
+ THIS_IS_A_REACTION 	:+1: pcerutti 
  LINE CENSURED
 
  LINE CENSURED
 
  LINE CENSURED
 
- LINE CENSURED 
+ LINE CENSURED
+
  THIS_IS_A_REACTION 	:+1: tomflood737, fede_0411, bryan737, pcerutti, cunhalves.ana, masterharkin 
- THIS_IS_A_REACTION 	:female-guard: tomflood737
+ THIS_IS_A_REACTION 	:female-guard: tomflood737 
+ LINE CENSURED
+
+ LINE CENSURED
+
+---- 2018-02-20 ----
 
  LINE CENSURED
 
  LINE CENSURED 
- LINE CENSURED
-
- LINE CENSURED 
  LINE CENSURED 
  LINE CENSURED 
  LINE CENSURED
 
  LINE CENSURED
 
- LINE CENSURED
-
- LINE CENSURED
-
- LINE CENSURED
-
- LINE CENSURED 
  LINE CENSURED
 
  LINE CENSURED
@@ -136,9 +142,17 @@
  LINE CENSURED
 
  LINE CENSURED 
- THIS_IS_A_REACTION 	:blush: endaryan
+ LINE CENSURED
 
- LINE CENSURED 
+ LINE CENSURED
+
+ LINE CENSURED
+
+ THIS_IS_A_REACTION 	:blush: endaryan 
+ LINE CENSURED
+
+---- 2018-02-21 ----
+
  THIS_IS_A_REACTION 	:joy: endaryan, sam.vanherzele, ginosabatino, apfoley 
  LINE CENSURED
 
@@ -148,22 +162,21 @@
 
  LINE CENSURED
 
- LINE CENSURED
+ [2018-02-21 13:47:07] <masterharkin> His flight deck is only sterile in climb and descent you should see how dirty he gets during the cruise.
 
- [2018-02-21 13:47:07] <masterharkin> His flight deck is only sterile in climb and descent you should see how dirty he gets during the cruise. 
  THIS_IS_A_REACTION 	:rolling_on_the_floor_laughing: pcerutti, greggmcavan 
- THIS_IS_A_REACTION 	:joy: alessandro.zanatta737, apfoley
-
- LINE CENSURED 
- LINE CENSURED 
- THIS_IS_A_REACTION 	:grin: marugestefano, padawa, mischa_buijs
-
- LINE CENSURED 
+ THIS_IS_A_REACTION 	:joy: alessandro.zanatta737, apfoley 
  LINE CENSURED
 
  LINE CENSURED 
- THIS_IS_A_REACTION 	:+1: sam.vanherzele, andy.airamerica, ginosabatino, franberries, felix.bamesreiter
+ THIS_IS_A_REACTION 	:grin: marugestefano, padawa, mischa_buijs 
+ LINE CENSURED
 
+---- 2018-02-22 ----
+
+ LINE CENSURED
+
+ THIS_IS_A_REACTION 	:+1: sam.vanherzele, andy.airamerica, ginosabatino, franberries, felix.bamesreiter 
  LINE CENSURED
 
  LINE CENSURED
@@ -178,9 +191,9 @@
 
  LINE CENSURED
 
- LINE CENSURED 
- THIS_IS_A_REACTION 	:joy: apfoley
+ LINE CENSURED
 
+ THIS_IS_A_REACTION 	:joy: apfoley 
  LINE CENSURED
 
  LINE CENSURED
@@ -191,51 +204,54 @@
 
  LINE CENSURED
 
- LINE CENSURED 
- THIS_IS_A_REACTION 	:+1::skin-tone-3: swfmcmanus, luuk.hermans
+ LINE CENSURED
 
+ THIS_IS_A_REACTION 	:+1::skin-tone-3: swfmcmanus, luuk.hermans 
  [2018-02-22 17:59:50] <brendanjacobs> Might need to ad Kiev to that list of bases  soon Tom. MOL was there the last 2 days!
 
  [2018-02-22 18:00:00] <brendanjacobs> add*
 
  LINE CENSURED
 
- LINE CENSURED 
  LINE CENSURED
 
- LINE CENSURED 
- LINE CENSURED 
- LINE CENSURED
-
- LINE CENSURED 
- THIS_IS_A_REACTION 	:muscle: max_palm
+---- 2018-02-23 ----
 
  LINE CENSURED
 
+---- 2018-02-24 ----
+
+ LINE CENSURED 
  LINE CENSURED
 
- LINE CENSURED 
- THIS_IS_A_REACTION 	:+1: pcerutti, max_palm, juliogh727, tomflood737
+ THIS_IS_A_REACTION 	:muscle: max_palm 
+ LINE CENSURED
 
- LINE CENSURED 
+ LINE CENSURED
+
+ LINE CENSURED
+
+ THIS_IS_A_REACTION 	:+1: pcerutti, max_palm, juliogh727, tomflood737 
+ LINE CENSURED
+
+---- 2018-02-25 ----
+
  THIS_IS_A_REACTION 	:+1: ginosabatino, max_palm, greggmcavan, garethglennon, tomflood737, arpadheger1977, mortolani1 
  THIS_IS_A_REACTION 	:facepunch::skin-tone-3: rpa, tomflood737 
  THIS_IS_A_REACTION 	:facepunch: kilroyrobin, tomflood737 
- LINE CENSURED
-
  [2018-02-25 13:13:13] <masterharkin> <https://youtu.be/xDgWUf36Buw> attachments: [{"service_name":"YouTube","service_url":"https:\/\/www.youtube.com\/","title":"United Boeing 377 Stratocruiser Hawaii Travelogue - 1950","title_link":"https:\/\/youtu.be\/xDgWUf36Buw","author_name":"Classic Airliners & Vintage Pop Culture","author_link":"https:\/\/www.youtube.com\/user\/mcdonnell220","thumb_url":"https:\/\/i.ytimg.com\/vi\/xDgWUf36Buw\/hqdefault.jpg","thumb_width":480,"thumb_height":360,"fallback":"YouTube Video: United Boeing 377 Stratocruiser Hawaii Travelogue - 1950","video_html":"<iframe width=\"400\" height=\"225\" src=\"https:\/\/www.youtube.com\/embed\/xDgWUf36Buw?feature=oembed&autoplay=1&iv_load_policy=3\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen><\/iframe>","video_html_width":400,"video_html_height":225,"from_url":"https:\/\/youtu.be\/xDgWUf36Buw","text":"","service_icon":"https:\/\/a.slack-edge.com\/2089\/img\/unfurl_icons\/youtube.png","id":1}]
 
  LINE CENSURED
 
  LINE CENSURED
 
- LINE CENSURED 
- THIS_IS_A_REACTION 	:+1: andy.airamerica
+ LINE CENSURED
 
- LINE CENSURED 
+ THIS_IS_A_REACTION 	:+1: andy.airamerica 
+ LINE CENSURED
+
  THIS_IS_A_REACTION 	:+1: andy.airamerica, max_palm, jessica.emurphy2009, marugestefano 
- THIS_IS_A_REACTION 	:grin: aliolimarco.job
-
+ THIS_IS_A_REACTION 	:grin: aliolimarco.job 
  LINE CENSURED
 
  [2018-02-25 19:53:04] <masterharkin> Post it in the MEDIA channel on the left.
@@ -254,39 +270,41 @@
 
  LINE CENSURED
 
+ LINE CENSURED
+
+---- 2018-02-26 ----
+
+ LINE CENSURED
+
+ LINE CENSURED
+
+ LINE CENSURED
+
+ LINE CENSURED
+
+ LINE CENSURED
+
+ LINE CENSURED
+
+ LINE CENSURED
+
+ LINE CENSURED
+
+ LINE CENSURED
+
+ THIS_IS_A_REACTION 	:+1: dohpau, reillyfinian 
+ LINE CENSURED
+
+ LINE CENSURED
+
+ LINE CENSURED
+
  LINE CENSURED 
- LINE CENSURED
+ [2018-02-26 19:08:14] <brendanjacobs> The document should have only been put in the relevant ma thread. The point of this is that we’re all looking into progress or updates in every base or country not just looking at our own base. If stuff is constantly duplicating like this then we won’t bother looking at any other base but our own. We’ll get used to it but the posting of the document in several places to start with, set this one off. Let’s not make the same mistake again.
 
- LINE CENSURED
+---- 2018-02-27 ----
 
- LINE CENSURED
-
- LINE CENSURED
-
- LINE CENSURED
-
- LINE CENSURED
-
- LINE CENSURED
-
- LINE CENSURED
-
- LINE CENSURED
-
- LINE CENSURED 
- THIS_IS_A_REACTION 	:+1: dohpau, reillyfinian
-
- LINE CENSURED
-
- LINE CENSURED
-
- LINE CENSURED 
- LINE CENSURED
-
- [2018-02-26 19:08:14] <brendanjacobs> The document should have only been put in the relevant ma thread. The point of this is that we’re all looking into progress or updates in every base or country not just looking at our own base. If stuff is constantly duplicating like this then we won’t bother looking at any other base but our own. We’ll get used to it but the posting of the document in several places to start with, set this one off. Let’s not make the same mistake again. 
  THIS_IS_A_REACTION 	:+1: andy.airamerica, padawa, andyappeltans, tomflood737, pcerutti 
- ---- 2018-02-27 ----
-
  LINE CENSURED
 
  LINE CENSURED
@@ -311,7 +329,10 @@
 
  LINE CENSURED
 
- LINE CENSURED 
+ LINE CENSURED
+
+---- 2018-03-04 ----
+
  LINE CENSURED
 
  LINE CENSURED
@@ -322,16 +343,14 @@
 
  LINE CENSURED
 
- LINE CENSURED 
- THIS_IS_A_REACTION 	:+1: r_guijarro, masterharkin, padawa
-
+ THIS_IS_A_REACTION 	:+1: r_guijarro, masterharkin, padawa 
  LINE CENSURED
 
  LINE CENSURED
 
- LINE CENSURED 
- THIS_IS_A_REACTION 	:+1: jbuick, joseph, cianmurray, masterharkin, padawa, max_palm, swfmcmanus, laurent.dubois38, sam.vanherzele
+ LINE CENSURED
 
+ THIS_IS_A_REACTION 	:+1: jbuick, joseph, cianmurray, masterharkin, padawa, max_palm, swfmcmanus, laurent.dubois38, sam.vanherzele 
  LINE CENSURED
 
  LINE CENSURED
@@ -354,7 +373,8 @@
 
  LINE CENSURED
 
- LINE CENSURED 
+ LINE CENSURED
+
  LINE CENSURED 
  LINE CENSURED 
  LINE CENSURED 
@@ -364,14 +384,14 @@
  LINE CENSURED 
  LINE CENSURED 
  THIS_IS_A_REACTION 	:muscle: padawa, johan, damiano.detomassi, franciscofonseca93, masterharkin, paul, danieltierney1, arpadheger1977, tomflood737, laurent_lebrun, rvelthove, pcerutti, sam.vanherzele, scotthemeryck 
- THIS_IS_A_REACTION 	:+1: andy.airamerica, danieltierney1, tomflood737, marmargav
-
+ THIS_IS_A_REACTION 	:+1: andy.airamerica, danieltierney1, tomflood737, marmargav 
  LINE CENSURED
 
  LINE CENSURED
 
- [2018-03-04 22:52:38] <masterharkin> The Survivor will become The Winner :trophy: 
- ---- 2018-03-05 ----
+ [2018-03-04 22:52:38] <masterharkin> The Survivor will become The Winner :trophy:
+
+---- 2018-03-05 ----
 
  LINE CENSURED
 
@@ -401,44 +421,6 @@
 
  LINE CENSURED
 
- [2018-03-05 13:19:37] <healyglen> Lads, just a reminder for anyone who hasn't filled out the EERC survey, could you do it as soon as possible. :+1: 
- THIS_IS_A_REACTION 	:+1::skin-tone-3: swfmcmanus, kilroyrobin, masterharkin, andy.airamerica
+ [2018-03-05 13:19:37] <healyglen> Lads, just a reminder for anyone who hasn't filled out the EERC survey, could you do it as soon as possible. :+1:
 
- LINE CENSURED
-
- LINE CENSURED
-
- LINE CENSURED
-
- LINE CENSURED
-
- LINE CENSURED 
- LINE CENSURED 
- LINE CENSURED 
- LINE CENSURED 
- LINE CENSURED
-
- LINE CENSURED
-
- LINE CENSURED
-
- LINE CENSURED
-
- [2018-03-05 17:11:21] <healyglen> Hi Christian, there is no deadline I'm aware of, however, the sooner the better. Cheers (edited)
-
- LINE CENSURED
-
- LINE CENSURED 
- LINE CENSURED
-
- LINE CENSURED
-
- LINE CENSURED 
- LINE CENSURED 
- LINE CENSURED
-
- LINE CENSURED 
- THIS_IS_A_REACTION 	:+1::skin-tone-3: swfmcmanus
-
- LINE CENSURED 
- 
+ THIS_IS_A_REACTION 	:+1::skin-tone-3: swfmcmanus, kilroyrobin, ma

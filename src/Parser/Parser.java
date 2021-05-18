@@ -16,6 +16,7 @@ public class Parser {
     public void start() {
 
         try {
+            int i = 0;
             boolean isBlackListed = false;
             FileReader fileReader = new FileReader(file);
             BufferedReader br = new BufferedReader(fileReader);
@@ -24,35 +25,45 @@ public class Parser {
             ArrayList<String> message = new ArrayList<>();
             while (line != null) {
                 if (line.length() > 1) {
-                    if (line.charAt(0) == '[' && line.charAt(1) == '2' && line.charAt(2) == '0') {
-                        processText.append(String.join(" ", message));
-                        processText.append("\n");
-                        message = new ArrayList<>();
-                        isBlackListed = false;
-                    }
                     String[] temp = line.split(" ");
-                    if (file.getBlackListUsername().contains(getUsername(line)) || isBlackListed) {
-                        message.add("\n");
-                        if (temp[0].length() > 1 && temp[0].charAt(1) == ':' && temp[0].charAt(temp[0].length() - 1) == ':') {
-                            message.add("THIS_IS_A_REACTION");
-                        }
-                        // CHECK TEMP HERE
-                        message.addAll(Arrays.asList(temp));
-                        isBlackListed = true;
-                    } else {
-                        if (temp.length > 1) {
-                            if (temp[0].length() > 1 && temp[0].charAt(1) == ':' && temp[0].charAt(temp[0].length() - 1) == ':') {
+                    if (i == 0 && (line.charAt(0) != '[' && line.charAt(1) != '2' && line.charAt(2) != '0')) {
+                        processText.append(String.join(" ", temp));
+                        processText.append("\n");
+                    }
+                    if (i > 0 && line.charAt(0) == '-' && line.charAt(1) == '-' && line.charAt(2) == '-' && line.charAt(3) == '-') {
+                        processText.append("\n");
+                        processText.append(String.join(" ", temp));
+                        processText.append("\n");
+                    }
+                    else {
+                        if (i > 0 || line.charAt(0) == '-' && line.charAt(1) == '-' && line.charAt(2) == '-' && line.charAt(3) == '-') {
+                            if (file.getBlackListUsername().contains(getUsername(line)) || isBlackListed) {
                                 message.add("\n");
-                                message.add("THIS_IS_A_REACTION");
+                                if (temp[0].length() > 1 && temp[0].charAt(1) == ':' && temp[0].charAt(temp[0].length() - 1) == ':') {
+                                    message.add("THIS_IS_A_REACTION");
+                                }
                                 // CHECK TEMP HERE
                                 message.addAll(Arrays.asList(temp));
-                            }
-                            else {
+                                isBlackListed = true;
+                            } else {
                                 message.add("\n");
-                                message.add("LINE CENSURED");
+                                if (temp[0].length() > 1 && temp[0].charAt(1) == ':' && temp[0].charAt(temp[0].length() - 1) == ':') {
+                                    message.add("THIS_IS_A_REACTION");
+                                    // CHECK TEMP HERE
+                                    message.addAll(Arrays.asList(temp));
+                                } else {
+                                    message.add("LINE CENSURED");
+                                }
+                                isBlackListed = false;
                             }
                         }
-                        isBlackListed = false;
+                        if (line.charAt(0) == '[' && line.charAt(1) == '2' && line.charAt(2) == '0') {
+                            processText.append(String.join(" ", message));
+                            processText.append("\n");
+                            i++;
+                            message = new ArrayList<>();
+                            isBlackListed = false;
+                        }
                     }
                 }
                 line = br.readLine();
