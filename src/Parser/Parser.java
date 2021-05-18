@@ -143,19 +143,39 @@ public class Parser {
         }
     }
 
+    public String isUsernameBlacklisted(ArrayList<String> tokens){
 
-    
-    // Construct the message
+        String username = " ";
 
-    // Method to get Username //AARON
 
-    // Method that goes through the message and check if we need to censure //CLÉMENT
+        //First case: We see the <> for the username
+        if(tokens.get(1).charAt(0) == '<' && tokens.get(1).charAt(tokens.get(1).length()-1) == '>'){
 
-    // Filter the reactions
+            StringBuilder temp = new StringBuilder();
 
-    // Get reaction
+            for (int i = 1; i < tokens.get(1).length()-1 ; i++) {
+                temp.append(tokens.get(1).charAt(i));
+            }
+            username = temp.toString();
+        }
 
-    // Get reactions reactions from deleted messages and check if one of the important guys is in it
+        // Second case: We see the @
+        else if(tokens.get(1).charAt(0) == '@'){
+
+            StringBuilder temp = new StringBuilder();
+
+            for(int i = 1; i<tokens.get(1).length(); i++){
+                temp.append(tokens.get(1).charAt(i));
+            }
+
+            username = temp.toString();
+        }
+        else{
+            username = tokens.get(1);
+        }
+
+        return username;
+    }
 
 
     public File getFile() {
