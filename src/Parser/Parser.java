@@ -20,8 +20,6 @@ public class Parser {
         StringBuilder processText = new StringBuilder();
         int count = 0;
         for (File file : files) {
-            processText.append(file.getPath());
-            processText.append("\n");
             try {
                 int i = 0;
                 boolean isBlackListed = false;
@@ -39,13 +37,14 @@ public class Parser {
                 ArrayList<String> message = new ArrayList<>();
                 String[] savedDate = null;
                 while (line != null) {
-                    if (line.length() > 3) {
+                    if (line.length() > 2) {
                         String[] temp = line.split(" ");
                         if (i == 0 && (line.charAt(0) != '[' && line.charAt(1) != '2' && line.charAt(2) != '0')) {
+                            temp = checkUsername(temp, file);
                             processText.append(String.join(" ", temp));
                             processText.append("\n");
                         }
-                        if (i > 0 && line.charAt(0) == '-' && line.charAt(1) == '-' && line.charAt(2) == '-' && line.charAt(3) == '-') {
+                        else if (i > 0 && line.charAt(0) == '-' && line.charAt(1) == '-' && line.charAt(2) == '-') {
                             isTimer = true;
                             savedDate = temp;
                         } else {
@@ -62,8 +61,7 @@ public class Parser {
                                 message = new ArrayList<>();
                                 isBlackListed = file.getBlackListUsername().contains((getUsername(temp).toLowerCase()));
                             }
-                            if ((i > 1 || line.charAt(0) == '-' && line.charAt(1) == '-' && line.charAt(2) == '-' && line.charAt(3) == '-')
-                                    && temp.length > 1) {
+                            if ((i >= 1 || line.charAt(0) == '-' && line.charAt(1) == '-' && line.charAt(2) == '-' && line.charAt(3) == '-') && temp.length > 1) {
                                 if (file.getBlackListUsername().contains((getUsername(temp).toLowerCase())) || isBlackListed) {
                                     message.add("\n");
                                     if (temp[0].length() > 1 && temp[0].charAt(1) == ':' && temp[0].charAt(temp[0].length() - 1) == ':') {
@@ -131,11 +129,41 @@ public class Parser {
         }
     }
 
+    public String[] checkUsername(String[] tokens, File file) {
+
+        ArrayList<String> copy = new ArrayList<>(Arrays.asList(tokens));
+        if (tokens.length > 1) {
+            if (tokens[0].equals("Private")) {
+                for (int i = 1; i < tokens.length; i++) {
+                    if (tokens[i].equals("between")) {
+                        for (int j = i+1; j < tokens.length; j++) {
+                            if (!file.getBlackListUsername().contains(tokens[j])) {
+                                copy.set(j, "CENSORED NAME,");
+                            }
+                        }
+                    }
+                }
+            }
+            else if (tokens[0].equals("Created:") || tokens[0].equals("Purpose:") || tokens[0].equals("Topic:") || tokens[0].equals("Discipline")) {
+                for (int i = 1; i < tokens.length; i++) {
+                    if (tokens[i].equals("by")) {
+                        for (int j = i+1; j < tokens.length; j++) {
+                            if (!file.getBlackListUsername().contains(tokens[j])) {
+                                copy.set(j, "CENSORED NAME,");
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return copy.toArray(new String[0]);
+    }
+
     // Method that goes through the message and check if we need to censure
     public String[] checkMessage(String[] tokens, File file){
 
         ArrayList<String> copy = new ArrayList<>(Arrays.asList(tokens));
-        for(String token : tokens){
+        for (String token : tokens){
             if (token.length() > 1) {
                 if (token.charAt(0) == '@') {
 
