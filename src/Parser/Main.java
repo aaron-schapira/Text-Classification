@@ -12,8 +12,8 @@ public class Main {
 //        String path = "src/Input/test_text.txt";
 //        String path = "src/Input/02_general.txt";
 //        String out_path = "src/Output/02_general_output.txt";
-        String path = "src/Input/Edward_O'Neill/edoneill1-masterharkin.txt";
-        String out_path = "src/Output/edoneill1-masterharkin.txt";
+        String path = "src/Input/Seamus_Bugler/masterharkin-seamusbugler.txt";
+        String out_path = "src/Output/test.txt";
         ArrayList<String> blackListName = new ArrayList<>();
 
         blackListName.add("Thomas Flood");
@@ -25,6 +25,7 @@ public class Main {
         blackListName.add("Seamus Bugler");
         blackListName.add("Edward O’Neill");
         blackListName.add("Stephen Harkin");
+        blackListName.add("Robby Garland");
 
         ArrayList<String> blackListUsername = new ArrayList<>();
 
@@ -32,21 +33,24 @@ public class Main {
         blackListUsername.add("andy.airamerica");
         blackListUsername.add("healyglen");
         blackListUsername.add("brendanjacobs");
-        blackListUsername.add("j_johnmurray737");
+        blackListUsername.add("johnmurray737");
         blackListUsername.add("fergus.cassidy");
         blackListUsername.add("seamusbugler");
         blackListUsername.add("edoneill1");
         blackListUsername.add("masterharkin");
+        blackListUsername.add("masterharkin");
+        blackListUsername.add("robbygarland");
 
         blackListUsername.add("tomflood737,");
         blackListUsername.add("andy.airamerica,");
         blackListUsername.add("healyglen,");
         blackListUsername.add("brendanjacobs,");
-        blackListUsername.add("j_johnmurray737,");
+        blackListUsername.add("johnmurray737,");
         blackListUsername.add("fergus.cassidy,");
         blackListUsername.add("seamusbugler,");
         blackListUsername.add("edoneill1,");
         blackListUsername.add("masterharkin,");
+        blackListUsername.add("robbygarland,");
 
 //        ArrayList<File> file = new ArrayList<>();
 //        file.add(new File(path, blackListUsername, blackListName));

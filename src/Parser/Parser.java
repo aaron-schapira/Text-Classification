@@ -61,7 +61,7 @@ public class Parser {
                                 message = new ArrayList<>();
                                 isBlackListed = file.getBlackListUsername().contains((getUsername(temp).toLowerCase()));
                             }
-                            if ((i >= 1 || line.charAt(0) == '-' && line.charAt(1) == '-' && line.charAt(2) == '-' && line.charAt(3) == '-') && temp.length > 1) {
+                            if ((i >= 1 || line.charAt(0) == '-' && line.charAt(1) == '-' && line.charAt(2) == '-') && temp.length > 0 && !temp[0].equals("[20")) {
                                 if (file.getBlackListUsername().contains((getUsername(temp).toLowerCase())) || isBlackListed) {
                                     message.add("\n");
                                     if (temp[0].length() > 1 && temp[0].charAt(1) == ':' && temp[0].charAt(temp[0].length() - 1) == ':') {
